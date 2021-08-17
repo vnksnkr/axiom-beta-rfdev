@@ -981,7 +981,7 @@ static int rfdev_remove(struct i2c_client *client)
 
 	pr_debug("%s: remove\n", DEV_NAME);
 
-	reset_fpga(rfdev);
+//	reset_fpga(rfdev);
 	fpga_mgr_unregister(rfdev->mgr);
 	misc_deregister(&rfdev->miscdev);
 	return 0;
